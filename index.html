@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>home</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+  <div class="contentbox">
+    <header>
+    <img src="images/glt.png">
+    <ul id="menu">
+      <li><a href="index.html">首页</a></li>
+      <li><a href="study.html">学习</a></li>
+      <li><a href="life.html">生活</a></li>
+      <li><a href="comments.html">留言板</a></li>
+    </ul>
+    <img src="images/head.jpg">
+    <div id="login">登录</div>
+    </header>
+    <div id="bg"></div>
+    <div class="content">
+    <div id="leftSlider">
+    </div>
+    <div id="rightSlider">
+      <div class="rightSbox news">
+        <div class="rightSTitle">最新动态</div>
+        <ul class="rightSCon newsConUl">
+          <li><a class="latestList" href="article.html"></a></li>
+          <li><a class="latestList" href="article.html"></a></li>
+          <li><a class="latestList" href="article.html"></a></li>
+          <li><a class="latestList" href="article.html"></a></li>
+          <li><a class="latestList" href="article.html"></a></li>
+        </ul>
+      </div>
+      <div class="rightSbox classify">
+        <div class="rightSTitle">随笔分类</div>
+        <ul class="showTags"></ul>
+      </div>
+      <div class="rightSbox friends">
+        <div class="rightSTitle">友情链接</div>
+        <ul class="rightSCon">
+          <li><a href="https://github.com/glt18" target="_blank">github</a></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <div class="rightSbox power" id="power">
+        <div class="rightSTitle">我的权限</div>
+        <ul class="showPowers"></ul>
+      </div>
+    </div>
+    </div>
+  </div> 
+  <div class="loginBox">
+    <div class="userinfo">
+      <form>
+        <input type="text" name="username" id="username" placeholder="用户名">
+        <input type="password" name="password" id="password" placeholder="密码">
+        <input type="submit" name="loginbtn" id="loginbtn" value="登录">
+      </form>
+      <span id="nologin">取消登录</span>
+    </div>
+  </div>
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/overall.js"></script>
+  <script type="text/javascript" src="js/homePage.js"></script>
+  <script type="text/javascript" src="js/login.js"></script>
+</body>
+</html>

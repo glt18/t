@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>登录</title>
+  <meta charset="utf-8">
+  <style type="text/css">
+    body {
+      background-color: #ccc;
+    }
+    .loginBox {
+      width: 300px;
+      height: 250px;
+      padding: 20px 30px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      box-sizing: border-box;
+      margin-left: -150px;
+      margin-top: -125px;
+      background-color: #fff;
+    }
+    .userinfo {
+      line-height: 40px;
+    }
+    .userinfo form {
+      padding-right: 8px;
+    }
+    .userinfo form input#username,.userinfo form input#password {
+      display: block;
+      width: 100%;
+      padding: 8px 0;
+      border: 2px solid #e1e1e1;
+      margin-bottom: 30px;
+      text-indent: 40px;
+      outline: 0;
+      font-size: 14px;
+    }
+    .loginBox #username {
+      background: url(./images/login-locked-icon.png) no-repeat 15px center;
+    }
+    .loginBox #password {
+      background: url(./images/login-key-icon.png) no-repeat 15px center;
+    }
+    .loginBox #loginbtn {
+      cursor: pointer;
+      background: #dc3c00;
+      display: block;
+      height: 40px;
+      color: #fff;
+      font-size: 20px;
+      clear: both;
+      width: 100%;
+      border: none;
+    }
+    .loginBox #nologin {
+      width: 100%;
+      height: 30px;
+      text-align: right;
+      color: #ccc;
+      font-size: 14px;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="loginBox">
+    <div class="userinfo">
+      <form>
+        <input type="text" name="username" id="username" placeholder="用户名">
+        <input type="password" name="password" id="password" placeholder="密码">
+        <input type="button" name="loginbtn" id="loginbtn" value="登录">
+      </form>
+      <span id="nologin">取消登录</span>
+    </div>
+  </div>
+  <script type="text/javascript" src='js/jquery.js'></script>
+  <script type="text/javascript">
+      var loginbtn = document.getElementById('loginbtn');
+    loginbtn.onclick = function() {
+      $.ajax({
+        type : 'post',
+        data : {
+          username : document.getElementById('username').value,
+          password : document.getElementById("password").value
+        },
+        dataType : 'text',
+        url : "http://localhost/blog/php/login.php",
+        success : function(data) {
+          document.write(data);
+        }
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,439 @@
+body,header,ul,li,div,span,form,input,img,h1,h2,h3,h4,h5,h6,p{
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+input {
+  border: 1px solid #666;
+  border-radius: 5px;
+}
+html,body {
+  background-color: #EFEFEF;  
+}
+body {
+  padding-top: 130px;
+  min-width: 850px;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+ul li {
+  list-style-type: none;
+}
+input,textarea {
+  outline: none;
+}
+header {
+  width: 100%;
+  height: 80px;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+header ul {
+  float: left;
+  width: 50%;
+  display: block;
+}
+header ul li {
+  display: block;
+  width: 20%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  float: left;
+  margin: 15px 0 15px 2%;
+  font-weight: bolder;
+  border-radius: 10px;
+  background-color: #1E90FF;
+  cursor: pointer;
+}
+header ul li a{
+  font-size: 20px;
+  color: #fff;
+  letter-spacing: 5px;
+}
+header>img {
+  width: 60px;
+  float: right;
+  cursor: pointer;
+  margin: 10px 5% 0 0;
+  border-radius: 50%;
+  transition: .5s;
+}
+header>img:hover {
+  border-radius: 0;
+  transition: .5s;
+}
+#login {
+  width: 3%;
+  height: 80px;
+  line-height: 80px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+#loginForm {
+  display: none;
+  margin-top: -80px;
+}
+#loginForm input{
+  width: 100%;
+  height: 30px;
+}
+#bg {
+  width: 100%;
+  height: 50px;
+  background-color: #EFEFEF;
+  position: fixed;
+  top: 80px;
+  left: 0;
+  z-index: 999;
+}
+.content {
+  width: 100%;
+}
+#rightSlider {
+  float: right;
+  background-color: #fff;
+  width: 30%;
+  margin-right: 2%;
+  max-height: 840px;
+}
+#rightSlider .rightSbox {
+  width: 90%;
+  margin: 20px auto;
+}
+#rightSlider .rightSbox .rightSTitle {
+  width: 35%;
+  height: 40px;
+  padding-left: 5%;
+  font-size: 16px;
+  background-color: #1E90FF;
+  color: #fff;
+  font-weight: bolder;
+  line-height: 40px;
+  cursor: pointer;
+  border-radius: 5px 20px 20px 5px;
+}
+#rightSlider .rightSbox .rightSCon li,#rightSlider .power li {
+  width: 90%;
+  height: 30px;
+  line-height: 30px;
+  cursor: pointer;
+  border-bottom: 1px dashed #1E90FF;
+  margin: 0 auto;
+  padding-left: 3%;
+  overflow: hidden; /*自动隐藏文字*/
+  text-overflow: ellipsis;/*文字隐藏后添加省略号*/
+  white-space: nowrap;/*强制不换行*/
+  background-color: #fff;
+}
+#rightSlider .rightSbox .rightSCon .hotsCon {
+  width: 10%;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  margin: 5px 3% 0 0;
+  border-radius: 5px;
+  color: #fff;
+  float: left;
+  cursor: pointer;
+  background-color: #1E90FF;
+}
+#rightSlider .power {
+  display: none;
+}
+#rightSlider .rightSbox .aboutme {
+  width: 100%;
+  height: 60px;
+  padding: 10px auto;
+}
+#rightSlider .rightSbox .aboutme li {
+  float: left;
+  width: 20%;
+  margin: 20px 0 0 10%;
+}
+#rightSlider .rightSbox .aboutme li img {
+  width: 50px;
+}
+#rightSlider .friends ul li {
+  text-align: center;
+}
+#rightSlider ul .tagClassStyle {
+  display: block;
+  height: 25px;
+  line-height: 25px;
+}
+#leftSlider {
+  float: left;
+  margin-left: 2%;
+  width: 60%;
+  /*min-height: 900px;*/
+  background-color: #fff;
+  overflow: hidden;
+}
+#leftSlider .articles {
+  width: 90%;
+  height: 300px;
+  margin: 20px auto;
+}
+#leftSlider .articles .articleTitle a.articleTitlea{
+  display: block;
+  padding: 10px 0;
+  color: #1E90FF;
+  cursor: pointer;
+}
+#leftSlider .articles .articleCon {
+  line-height: 26px;
+  text-indent: 32px;
+  height: 160px;
+  overflow: hidden;
+}
+#leftSlider .articles .dispMore a {
+  float: right;
+  padding: 1%;
+  color: #ccc;
+  font-size: 14px;
+  cursor: pointer;
+}
+#leftSlider .articles .articleTags,#rightSlider .articleTags {
+  clear: right;
+  display: inline-block;
+  padding: 0 2%;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  margin: 30px 2% 0 0;
+  background-color: #1E90FF;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+#leftSlider .articles .articleTime {
+  clear: right;
+  height: 30px;
+  padding: 0 2%;
+  line-height: 30px;
+  text-align: center;
+  background-color: #1E90FF;
+  border-radius: 5px;
+  color: #fff;
+  float: right;
+}
+.article {
+  width: 100%;
+}
+.article #articleTitleS {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 26px;
+  font-weight: bolder;
+}
+.article #aboutArticleS {
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 12px;
+  background-color: #ccc;
+}
+.article #aboutArticleS #aboutArticleUl {
+  width: 50%;
+  margin: 0 auto;
+}
+.article #aboutArticleS #aboutArticleUl li {
+  float: left;
+  width: 50%;
+  color: #fff;
+}
+.article #articleContentS {
+  width: 94%;
+  line-height: 30px;
+  margin: 0 3% 20px;
+  text-indent: 5%;
+  min-height: 200px;
+}
+.article #nextArticleS {
+  float: right;
+  margin: 0 5% 10px;
+  font-size: 14px;
+  color: #888;
+  cursor: pointer;
+}
+.article #nextArticleS:hover {
+  color: red;
+}
+.article #articleCommentS {
+  clear: right;
+  width: 94%;
+  margin: 0 3%;
+  border: 1px solid #ccc;
+}
+.commentsList {
+  width: 94%;
+  margin: 0 3%;
+}
+.article #articleCommentS form,.commentsList form {
+  display: block;
+  margin :20px auto;
+  width: 80%;
+}
+.article .thisuserhead,.commentsList .thisuserhead {
+  width: 15%;
+  height: 250px;
+  line-height: 250px;
+  float: left;
+  text-align: center;
+}
+.article .thisuserhead img,.commentsList  .thisuserhead img {
+  width: 50%;
+  border-radius: 50%;
+}
+.article #articleCommentS #commentBtn,.commentsList #messageBtn {
+  height: 25px;
+  text-align: center;
+  margin-left: 10%;
+  margin-bottom: 10px;
+}
+.article #articleCommentS #comment,.commentsList #message{
+  display: block;
+  margin: 20px auto;
+  font-size: 16px;
+  width: 80%;
+  height: 200px;
+}
+.article #articleCommentS .commentSpan,.commentsList .commentSpan {
+  font-size: 24px;
+  font-weight: bolder;
+  border-left: 2px solid #C20C0C;
+  padding-left: 2%;
+}
+.article #articleCommentS .comments,.commentsList .comments {
+  width: 100%;
+  border-top: 1px solid #ccc;
+  vertical-align: top;
+  position: relative;
+  clear: both;
+  z-index: 1;
+}
+.article #articleCommentS .comments .commentCon,.commentsList .comments .commentCon {
+  width: 90%;
+  float: right;
+}
+.article #articleCommentS .comments ul,.commentsList .comments ul {
+  width: 30%;
+  float: right;
+  clear: both;
+  font-size: 14px;
+  color: #666;
+}
+.article #articleCommentS .comments ul li,.commentsList .comments ul li {
+  text-align: center;
+  cursor: pointer;
+  float: left;
+  width: 50%;
+}
+.article #articleCommentS .comments .userinfo,.commentsList .comments .userinfo {
+  width: 10%;
+  margin: 20px auto;
+  text-align: center;
+  display: inline-block;
+}
+.article #articleCommentS .comments .userinfo img,.commentsList .comments .userinfo img {
+  width: 70%;
+  border-radius: 50%;
+}
+.article #articleCommentS .comments .replyCon,.commentsList .comments .replyCon {
+  clear: both;
+  display: block;
+  width: 80%;
+  height: 50px;
+  margin: 10px auto;
+}
+.type {
+  width: 100%;
+}
+.type .studyLogo,.type .lifeLogo {
+  width: 92%;
+  margin: 20px 3%;
+  padding-left: 2%;
+  font-weight: 200;
+  border-left: 3px solid #1E90FF;
+}
+.study .artStuList,.life .artLifeList,#showArticle {
+  width: 94%;
+  padding: 0 3%;
+}
+.study .artStuList li,.life .artLifeList li,#showArticle li{
+  padding: 1%;
+}
+.deleteBtn {
+  margin-left: 5%;
+}
+.study .saySth,.life .saySth{
+  padding: 1%;
+  text-indent: 3%;
+  font-style: oblique;
+}
+.loginBox {
+  display: none;
+  width: 300px;
+  height: 240px;
+  padding: 20px 30px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  box-sizing: border-box;
+  margin-left: -150px;
+  margin-top: -120px;
+  background-color: #fff;
+}
+.userinfo {
+  line-height: 40px;
+}
+.userinfo form {
+  padding-right: 8px;
+}
+.userinfo form input#username,.userinfo form input#password {
+  display: block;
+  width: 100%;
+  padding: 8px 0;
+  border: 2px solid #e1e1e1;
+  margin-bottom: 30px;
+  text-indent: 40px;
+  outline: 0;
+  font-size: 14px;
+}
+.loginBox #username {
+  background: url(../images/login-locked-icon.png) no-repeat 15px center;
+}
+.loginBox #password {
+  background: url(../images/login-key-icon.png) no-repeat 15px center;
+}
+.loginBox #loginbtn {
+  cursor: pointer;
+  background: #dc3c00;
+  display: block;
+  height: 40px;
+  color: #fff;
+  font-size: 20px;
+  clear: both;
+  width: 100%;
+  border: none;
+}
+.loginBox #nologin {
+  cursor: pointer;
+  width: 100%;
+  height: 30px;
+  text-align: right;
+  color: #666;
+  font-size: 14px;
+  display: block;
+}

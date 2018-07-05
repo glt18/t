@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>home</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+  <header>
+    <img src="images/glt.png">
+    <ul id="menu">
+      <li><a href="index.html">首页</a></li>
+      <li><a href="study.html">学习</a></li>
+      <li><a href="life.html">生活</a></li>
+      <li><a href="conments.html">留言板</a></li>
+    </ul>
+    <img src="images/head.jpg">
+  </header>
+  <div id="bg"></div>
+  <div class="content">
+    <div id="leftSlider">
+      <div class="commentsList">
+        <div class="thisuserhead"><img src="images/head.jpg"></div>
+        <form>
+          <textarea id="message" placeholder="想对我说点什么呢"></textarea>
+          <input id="messageBtn" type="submit" name="submit" value="提交留言">
+        </form>
+        <span class="commentSpan">留言</span>
+      </div>
+    </div>
+    <div id="rightSlider">
+      <div class="rightSbox news">
+        <div class="rightSTitle">最新动态</div>
+        <ul class="rightSCon newsConUl">
+          <li><a class="latestList" href="article.html"></a></li>
+          <li><a class="latestList" href="article.html"></a></li>
+          <li><a class="latestList" href="article.html"></a></li>
+          <li><a class="latestList" href="article.html"></a></li>
+          <li><a class="latestList" href="article.html"></a></li>
+        </ul>
+      </div>
+      <div class="rightSbox classify">
+        <div class="rightSTitle">随笔分类</div>
+        <ul class="showTags"></ul>
+      </div>
+      <div class="rightSbox friends">
+        <div class="rightSTitle">友情链接</div>
+        <ul class="rightSCon">
+          <li><a href="https://github.com/glt18" target="_blank">github</a></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+ 
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/overall.js"></script>
+  <script type="text/javascript" src="js/message.js"></script>
+</body>
+</html>
